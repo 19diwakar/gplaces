@@ -72,7 +72,8 @@ class Period {
       };
 
   @override
-  bool operator ==(other) => other is Period && other.open == open && other.close == close;
+  bool operator ==(other) =>
+      other is Period && other.open == open && other.close == close;
 
   @override
   int get hashCode => open.hashCode ^ close.hashCode;
